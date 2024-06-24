@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Algorithm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <h1>Run Algorithm</h1>
+        
+        <!-- Validate Mentee List Section -->
+        <section class="validate-section">
+            <h2>Validate Mentee List</h2>
+            <input type="file" id="new-mentee-list" accept=".csv">
+            <button id="validate-mentee-button">Submit</button>
+            <p id="validation-result"></p>
+        </section>
+        
+        <!-- Upload Lists Section -->
+        <section class="upload-section">
+            <h2>Upload Lists</h2>
+            <input type="file" id="mentee-list" accept=".csv" placeholder="Upload Mentee List">
+            <label for="mentee-list">Upload Mentee List</label>
+            <input type="file" id="mentor-list" accept=".csv" placeholder="Upload Mentor List">
+            <label for="mentor-list">Upload Mentor List</label>
+            <input type="file" id="training-list" accept=".csv" placeholder="Upload Training List">
+            <label for="training-list">Upload Students Who Attended Training</label>
+            <input type="file" id="quiz-list" accept=".csv" placeholder="Upload Quiz List">
+            <label for="quiz-list">Upload Students Who Took the Quiz</label>
+            <button id="upload-submit-button">Submit</button>
+        </section>
+        
+        <!-- Generate Assigned List Section -->
+        <section class="generate-section">
+            <button id="generate-button" disabled>Generate Assigned List</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
